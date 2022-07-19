@@ -1,12 +1,40 @@
+import 'package:blood_db/constants.dart';
+import 'package:blood_db/widget/profilebar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: kPrimaryLightColor,
+        title: const Text(
+          'Home',
+          style: TextStyle(color: Colors.black),
+        ),
+      ),
+      body: Column(
+        children: [
+          Row(
+            children: [
+              const Center(child: Text('Evedaaaa searchbar with filtration')),
+            ],
+          ),
+          SingleChildScrollView(
+            child: Column(children: [
+              ProfileBar(),
+            ]),
+            // <-- wrap this around
+            // child: Column(
+            //   children: const [
+            //     ProfileBar(),
+            //   ],
+            // ),
+          )
+        ],
+      ),
+    );
   }
 }
