@@ -39,7 +39,7 @@ class _SettingsState extends State<Settings> {
             child: CircleAvatar(
               radius: 50,
               backgroundImage: NetworkImage(
-                  "https://cdn.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.webp"),
+                  "https://st2.depositphotos.com/1006318/5909/v/950/depositphotos_59095529-stock-illustration-profile-icon-male-avatar.jpg"),
             ),
           ),
           const SizedBox(
